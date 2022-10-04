@@ -1,0 +1,406 @@
+@charset "utf-8";
+
+:root{
+    --belt-color: rgb(102, 103, 103);
+    --item-center: 0 auto;
+}
+
+h1 {
+    display: none;
+}
+#container {
+    display: block;
+    width: 100%;
+}
+#container .head-bar {
+    height: 30px;
+    background-color: var(--belt-color);
+    /* position: relative; */
+}
+.head-bar div {
+    width: 960px;
+    font-family: 'メイリオ';
+    font-size: 11px;
+    margin: var(--item-center); /* if position: absolute->！効かない */
+    position: relative;
+    top: 25%;
+    /* transform: translate(0, -50%) */
+}
+
+header {
+    width: inherit;
+    background-image: url(../img/h_bg02.png);
+}
+header #head-item {
+    width: 960px;
+    /* width: inherit; */
+    height: 125px;
+    margin: var(--item-center);
+}
+header #head-item .head-logo {
+    width: 200px;
+    height: 70px;
+    margin-top: 27px;
+    background-image: url("../img/logo.jpg");
+    float: left;
+}
+header nav#above-menu {
+    height: 50px;
+    float: right; 
+    margin-top: 38px;   
+}
+header nav#above-menu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+nav#above-menu ul li {
+    display: inline-block;
+    border-left: 1px solid;
+    width: 166px;
+    height: 50px;
+    position: relative;
+}
+nav#above-menu ul li:nth-child(1):before {
+    content: url(../img/icon01.png);
+    position: relative;
+    top: 8px;
+    left: 47px;
+}
+nav#above-menu ul li:nth-child(2):before {
+    content: url(../img/icon02.png);
+    position: relative;
+    top: 8px;
+    left: 32px
+}
+nav#above-menu ul li:nth-child(3):before {
+    content: url(../img/icon03.png);
+    position: relative;
+    top: 8px;
+    left: 30px;
+}
+nav#above-menu ul li:nth-child(4):before {
+    content: url(../img/icon04.png);
+    position: relative;
+    top: 8px;
+    left: 32px;
+}
+nav#above-menu ul li a:nth-child(4) {
+    border-right: 1px solid;
+}
+nav#above-menu ul li a {
+    font-family: 'メイリオ';
+    font-size: 13px;
+    /*bottom: 8px; /* 親高さ50px-13px-1em(13px)-上空間8px-(何となく微調整)8px */
+}
+nav#above-menu ul li a:nth-child(1) {
+    position: inherit;
+    bottom: 45px; /* 自フォント(13px*2)+兄弟フォント11px+空間+8px */
+    left: 77px;
+}
+nav#above-menu ul li a:nth-child(2) {
+    position: inherit;
+    bottom: 45px; /* 自フォント(13px*2)+兄弟フォント11px+空間+8px */
+    left: 65px;
+}
+nav#above-menu ul li a:nth-child(3) {
+    position: inherit;
+    bottom: 45px; /* 自フォント(13px*2)+兄弟フォント11px+空間+8px */
+    left: 63px;
+}
+nav#above-menu ul li a:nth-child(4) {
+    position: inherit;
+    bottom: 45px; /* 自フォント(13px*2)+兄弟フォント11px+空間+8px */
+    left: 63px;
+}
+nav#above-menu ul li a p {
+    font-family: 'メイリオ';
+    font-size: 11px;
+    position: absolute; /* なぜか-50pxを補正 */
+    bottom: 8px; /* 下空間 */
+}
+nav#above-menu ul li a:nth-child(1) p {
+    position: absolute;
+    left: 82px;
+}
+nav#above-menu ul li a:nth-child(2) p {
+    position: absolute;
+    left: 78px;
+}
+nav#above-menu ul li a:nth-child(3) p {
+    position: absolute;
+    left: 76px;
+}
+nav#above-menu ul li a:nth-child(4) p {
+    position: absolute;
+    left: 76px;
+}
+header .head-slide {
+    width: inherit;
+    background-color: rgb(49, 51, 51);
+}
+header .head-slide .top-slide {
+    width: 960px;
+    height: 350px;
+    /* background-color: var(--belt-color);
+    font-family: 'メイリオ';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 350px; */
+    margin: var(--item-center);
+    background-image: url(../img/main.jpg);
+}
+
+main {
+    width: 960px;
+    margin: var(--item-center);
+}
+main aside {
+    float: left;
+    /* width: 305px; */
+    margin-top: 25px;
+}
+main aside::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+main aside #side-menu {
+    height: 249px;
+    border: 1px solid;
+}
+aside ul#side-menu li a {
+    height: 48px;
+    font-family: 'メイリオ';
+    font-size: 14px;
+    padding-left: 17px;
+    line-height: 48px;
+}
+aside ul#side-menu li a:not(:last-child) {
+    border-bottom: 1px solid;
+}
+/* aside a .side-banner {
+    width: 304px;
+    height: 78px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--belt-color);
+} */
+aside a .side-banner {
+    height: 78px;
+    background-image: url(../img/bn01.png);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+aside ul#square-banner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 305px;
+    height: 305px;
+    background-color: rgb(235, 235, 235);
+    padding: 5px;
+    box-sizing: border-box;
+}
+ul#square-banner li a {
+    width: 137px;
+    height: 137px;
+    margin: 5px;
+}
+ul#square-banner ul li a:nth-child(1) div {
+    background-image: url(../img/bn02.jpg);
+}
+ul#square-banner ul li a:nth-child(2) div {
+    background-image: url(../img/bn03.jpg);
+}
+ul#square-banner ul li a:nth-child(3) div {
+    background-image: url(../img/bn04.jpg);
+}
+ul#square-banner ul li a:nth-child(4) div {
+    background-image: url(../img/bn05.jpg);
+}
+
+section {
+    margin-top: 25px;
+    /* margin-left: 22px; */
+    border: 1px solid;
+    float: right;
+}
+section .sec-title {
+    height: 50px;
+    font-family: 'メイリオ';
+    font-size: 20px;
+    color: white;
+    background-color: var(--belt-color);
+    line-height: 50px;
+    padding-left: 14px;
+}
+article.text-area {
+    margin-bottom: 22px;
+    padding: 23px;
+    border: 1px solid;
+}
+article.text-area p.article-title {
+    font-family: 'メイリオ';
+    font-size: 20px;
+}
+/* article.text-area p.article-title:first-child {
+    color: black;
+} */
+article.text-area p.article-title:nth-of-type(2) {
+    color: rgb(198, 26, 34);
+}
+article.text-area p.article-title:nth-of-type(3) {
+    color: rgb(0, 143, 59);
+}
+article.text-area p.article-text {
+    font-family: 'メイリオ';
+    font-size: 13px;
+}
+section a .main-banner {
+    width: inherit;
+    height: 98px;
+    margin-bottom: 22px;
+    /* background-color: var(--belt-color); */
+    background-image: url(../img/bn06.png);
+}
+section article.flex-area {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 629px;
+    height: 319px; */
+    padding: 9px;
+    border: 1px solid;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+article.flex-area div {
+    width: 183px;
+    margin: auto;
+}
+article.flex-area div p.flex-title {
+    font-family: 'メイリオ';
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    line-height: 32px; /* 高さ-margin */
+}
+p.flex-title::before {
+    content: url(../img/icon_star.png);
+    position: relative;
+    top: 4px;
+}
+article.flex-area div p.flex-text {
+    font-family: 'メイリオ';
+    font-size: 14px;
+}
+
+footer {
+    width: inherit;
+    height: 245px;
+    background-image: url(../img/h_bg02.png);
+}
+footer .foot-banner {
+    height: 125px;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.foot-banner a .banner-img {
+    width: 798px;
+    height: 77px;
+    margin: auto;
+    /* background-color: var(--belt-color); */
+    background-image: url(../img/bn07.png);
+}
+footer nav#foot-menu {
+    height: 78px;
+    background-color: white;
+}
+nav#foot-menu ul li {
+    display: flex;
+    height: inherit;
+    margin-left: 416px; /* 960-(1200-164*4) */
+}
+nav#foot-menu ul li a {
+    /* display: inline-block; */
+    width: 166px;
+    height: 50px;
+    /* line-height: 78px; */
+    position: relative;
+}
+nav#foot-menu ul li a:nth-child(1):before {
+    content: url(../img/icon01.png);
+    position: relative;
+    top: 22px; /* 上空間8px+(foot-menu - white-menu)/2 */
+    left: 47px;
+}
+nav#foot-menu ul li a:nth-child(2):before {
+    content: url(../img/icon02.png);
+    position: relative;
+    top: 22px; /* 上空間8px+(foot-menu - white-menu)/2 */
+    left: 32px
+}
+nav#foot-menu ul li a:nth-child(3):before {
+    content: url(../img/icon03.png);
+    position: relative;
+    top: 22px; /* 上空間8px+(foot-menu - white-menu)/2 */
+    left: 30px;
+}
+nav#foot-menu ul li a:nth-child(4):before {
+    content: url(../img/icon04.png);
+    position: relative;
+    top: 22px; /* 上空間8px+(foot-menu - white-menu)/2 */
+    left: 32px;
+}
+nav#foot-menu ul li a {
+    font-family: 'メイリオ';
+    font-size: 13px;
+}
+nav#foot-menu ul li a:nth-child(1) {
+    position: inherit;
+    bottom: 30px; /* 画像サイズ */
+    left: 77px;
+}
+nav#foot-menu ul li a:nth-child(2) {
+    position: inherit;
+    bottom: 30px; /* 画像サイズ */
+    left: 65px;
+}
+nav#foot-menu ul li a:nth-child(3) {
+    position: inherit;
+    bottom: 30px; /* 画像サイズ */
+    left: 63px;
+}
+nav#foot-menu ul li a:nth-child(4) {
+    position: inherit;
+    bottom: 30px; /* 画像サイズ */
+    left: 63px;
+}
+nav#foot-menu ul li a span {
+    font-family: 'メイリオ';
+    font-size: 11px;
+    position: relative;
+    bottom: 50px; /* positionの関係 */
+}
+nav#foot-menu ul li a:nth-child(1) p {
+    left: 82px;
+}
+nav#foot-menu ul li a:nth-child(2) p {
+    left: 78px;
+}
+nav#foot-menu ul li a:nth-child(3) p {
+    left: 76px;
+}
+nav#foot-menu ul li a:nth-child(4) p {
+    left: 76px;
+}
+footer .copyright {
+    height: 40px;
+}
+footer .copyright p {
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+}
