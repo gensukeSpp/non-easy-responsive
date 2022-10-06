@@ -15,7 +15,6 @@ h1 {
 #container .head-bar {
     height: 30px;
     background-color: var(--belt-color);
-    /* position: relative; */
 }
 .head-bar div {
     width: 960px;
@@ -38,13 +37,16 @@ header #head-item {
     margin: var(--item-center);
 }
 header #head-item .head-logo {
-    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 21%;
     height: 70px;
     margin-top: 27px;
     background-image: url("../img/logo.jpg");
     float: left;
 }
 header nav#above-menu {
+    width: 70%;
     height: 50px;
     float: right; 
     margin-top: 38px;   
@@ -54,10 +56,13 @@ header nav#above-menu::after {
     display: block;
     clear: both;
 }
+/* nav#above-menu ul {
+    width: 69%;
+} */
 nav#above-menu ul li {
     display: inline-block;
     border-left: 1px solid;
-    width: 166px;
+    width: calc(100vw * 0.17);
     height: 50px;
 }
 nav#above-menu ul li:nth-child(4) {
@@ -193,22 +198,21 @@ aside a .side-banner {
 aside ul#square-banner {
     display: flex;
     flex-wrap: wrap;
-    /* width: 305px;
-    height: 305px; */
+    /* width: 305px; */
     width: inherit;
-    height: 25%;
+    height: 305px;
     background-color: rgb(235, 235, 235);
     padding: 5px;
     box-sizing: border-box;
 }
 ul#square-banner li {
-    width: 46%;
+    width: 46.5%;
     margin: 5px;
 }
 ul#square-banner li a div {
     background-size: contain;
     background-repeat: no-repeat;
-    height: 136px;
+    height: 138px;
     /* margin: 5px; */
 }
 ul#square-banner li:nth-child(1) a div {

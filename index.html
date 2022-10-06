@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 696px)"> <!-- タブレット -->
-        <link rel="stylesheet" href="./css/mobile.css" media="screen and (min-width: 320px)"> <!-- スマホ -->
+        <link rel="stylesheet" href="./css/mobile.css"> <!-- スマホ -->
         <meta name="viewport" content="width=device-width initial-scale=1">
     </head>
     <h1>Weblesson05</h1>
@@ -17,36 +17,26 @@
         <header>
             <div id="head-item">
                 <div class="head-logo"></div>
-                <!-- <div class="head-menu"> -->
-                    <!-- <div class="above-menu">ホーム</div>
-                    <div class="above-menu">メニュー01</div>
-                    <div class="above-menu">メニュー02</div>
-                    <div class="above-menu">メニュー03</div> -->
                 <div class="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <nav>
-                    <ul  id="above-menu">
-                        <li><a href="./home">ホーム<p>HOME</p></a></li>
-                        <li><a href="./menu01">メニュー01<p>MENU01</p></a></li>
-                        <li><a href="./menu02">メニュー02<p>MENU02</p></a></li>
-                        <li><a href="./menu03">メニュー03<p>MENU03</p></a></li>
+                <nav id="above-menu">
+                    <ul>
+                        <li><a href="./home"><p>ホーム</p><pre>HOME</pre></a></li>
+                        <li><a href="./menu01"><p>メニュー01</p><pre>MENU01</pre></a></li>
+                        <li><a href="./menu02"><p>メニュー02</p><pre>MENU02</pre></a></li>
+                        <li><a href="./menu03"><p>メニュー03</p><pre>MENU03</pre></a></li>
                     </ul>
-                    <!-- <p>ホーム</p><span>HOME</span>
-                    <p>メニュー01</p><span>MENU01</span>
-                    <p>メニュー02</p><span>MENU01</span>
-                    <p>メニュー03</p><span>MENU01</span> -->
                 </nav>
             </div>
             <div class="head-slide">
                 <div class="top-slide"></div>
             </div>
-            <!-- </div> -->
         </header>
         <main>
-            <nav>
+            <aside>
                 <ul id="side-menu">
                     <li><a href="./side-menu01"><p>メニュー01</p></a></li>
                     <li><a href="./side-menu02"><p>メニュー02</p></a></li>
@@ -61,7 +51,7 @@
                     <li><a href="./ad04"><div></div></a></li>
                     <li><a href="./ad05"><div></div></a></li>
                 </ul>            
-            </nav>
+            </aside>
 
             <section>
                 <div class="sec-title">画像タイトル 画像タイトル</div>
@@ -122,15 +112,16 @@
         </main>
         <footer>
             <div class="foot-banner">
-                <a href="./ad06"><div class="main-banner"></div></a>            </div>
+                <a href="./ad06"><div class="banner-image"></div></a>
+            </div>
             <nav id="foot-menu">
-                <ul  id="above-menu">
-                    <li><a href="./home">ホーム<p>HOME</p></a></li>
-                    <li><a href="./menu01">メニュー01<p>MENU01</p></a></li>
-                    <li><a href="./menu02">メニュー02<p>MENU02</p></a></li>
-                    <li><a href="./menu03">メニュー03<p>MENU03</p></a></li>
+                <ul>
+                    <li><a href="./home"><p>ホーム</p><pre>HOME</pre></a></li>
+                    <li><a href="./menu01"><p>メニュー01</p><pre>MENU01</pre></a></li>
+                    <li><a href="./menu02"><p>メニュー02</p><pre>MENU02</pre></a></li>
+                    <li><a href="./menu03"><p>メニュー03</p><pre>MENU03</pre></a></li>
                 </ul>
-            </nav>
+        </nav>
             <div class="copyright"><p>COPYRIGHT © BRIDGE. ALL RIGHTS RESERVED.<p></div>
         </footer>
     </div>

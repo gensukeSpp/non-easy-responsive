@@ -5,88 +5,88 @@
 } */
 
 @media screen and (max-width: 1044px) {
+    #container {
+        width: 100vw;
+    }
     #container .head-bar {
         display: none;
     }
 
-    header {
+    header #head-item {
         width: inherit;
     }
     header #head-item nav#above-menu {
-        /* width: min(70vw, 685px); */
-        width: 685px;
+        width: min(72.5vw, 672px);
+        /* width: 685px; */
     }
-    nav#above-menu a {
-        position: relative;
-    }
-    nav#above-menu a:nth-child(1) {
+    /* nav#above-menu ul li:nth-child(1) {
         width: 88px;
     }
-    nav#above-menu a:nth-child(2) {
+    nav#above-menu ul li:nth-child(2) {
         width: 107px;
     }
-    nav#above-menu a:nth-child(3) {
+    nav#above-menu ul li:nth-child(3) {
         width: 107px;
     }
-    nav#above-menu a:nth-child(4) {
+    nav#above-menu ul li:nth-child(4) {
         width: 105px;
-    }
-    nav#above-menu a:nth-child(1):before {
+    } */
+    /* nav#above-menu ul li a {
+        position: relative;
+    } */
+    nav#above-menu ul li:nth-child(1) a::before {
         top: 8px;
-        left: 12px; /* 元より-35px */
+        left: 12px;
     }
-    nav#above-menu a:nth-child(2):before {
+    nav#above-menu ul li:nth-child(2) a::before {
         top: 8px;
-        left: 12px; /* 元より-20px */ 
+        left: 12px;
     }
-    nav#above-menu a:nth-child(3):before {
+    nav#above-menu ul li:nth-child(3) a::before {
         top: 8px;
-        left: 12px; /* 元より-18px */
+        left: 12px;
     }
-    nav#above-menu a:nth-child(4):before {
+    nav#above-menu ul li:nth-child(4) a::before {
         top: 8px;
-        left: 12px; /* 元より-20px */
+        left: 12px;
     }
-    nav#above-menu a:nth-child(4) {
+    nav#above-menu ul li:nth-child(4) {
         border-right: 1px solid;
     }
-    nav#above-menu a p {
+    nav#above-menu ul li a p {
         font-size: 11px;
-    }
-    nav#above-menu a:nth-child(1) p {
         bottom: 39px; /* 自フォント(11px*2)+兄弟フォント9px+空間+8px */
+    }
+    nav#above-menu ul li:nth-child(1) a p {
         left: 42px; /* 元より-35px */
     }
-    nav#above-menu a:nth-child(2) p {
-        bottom: 39px; /* 自フォント(11px*2)+兄弟フォント9px+空間+8px */
+    nav#above-menu ul li:nth-child(2) a p {
         left: 45px; /* 元より-20px */
     }
-    nav#above-menu a:nth-child(3) p {
-        bottom: 39px; /* 自フォント(11px*2)+兄弟フォント9px+空間+8px */
+    nav#above-menu ul li:nth-child(3) a p {
         left: 45px; /* 元より-18px */
     }
-    nav#above-menu a:nth-child(4) p {
-        bottom: 39px; /* 自フォント(11px*2)+兄弟フォント9px+空間+8px */
+    nav#above-menu ul li:nth-child(4) a p {
         left: 41px; /* 元より-18px */
     }
-    nav#above-menu a span {
+    nav#above-menu ul li a pre {
         font-family: 'メイリオ';
         font-size: 9px;
-        position: absolute; /* なぜか-50pxを補正 */
         bottom: 8px; /* 下空間 */
     }
-    nav#above-menu a:nth-child(1) span {
+    nav#above-menu ul li:nth-child(1) a pre {
         left: 43px; /* 結局測った */
     }
-    nav#above-menu a:nth-child(2) span {
+    nav#above-menu ul li:nth-child(2) a pre {
         left: 48px; /* 結局測った */
     }
-    nav#above-menu a:nth-child(3) span {
+    nav#above-menu ul li:nth-child(3) a pre {
         left: 48px; /* 結局測った */
     }
-    nav#above-menu a:nth-child(4) span {
+    nav#above-menu ul li:nth-child(4) a pre {
         left: 48px; /* 結局測った */
     }
+
     header .head-slide .top-slide {
         background-size: cover;
         background-position: center;
@@ -95,58 +95,37 @@
         width: 100%;
     }
 
+
     main {
         width: inherit;
         margin: 0 29px 0 29px;
     }
-    main nav {
-        width: 30vw;
-    }
-    nav a .side-banner {
+    aside a .side-banner {
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         width: 100%;
     }
-    nav .square-banner {
-        width: inherit;
-        height: 30vw;
-        flex-direction: row;
+
+    aside ul#square-banner {
+        width: 25vw;
+        height: 25vw;
     }
-    .square-banner a {
+    aside ul#square-banner li a {
         background-size: 90%;
         background-position: center;
         background-repeat: no-repeat;
         width: 45%;
         height: 45%;
     }
-    /* .square-banner a div:nth-child(2) {
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 64%;
-    }
-    .square-banner a div:nth-child(3) {
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 64%;
-    }
-    .square-banner a div:nth-child(4) {
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 64%;
-    } */
 
-    section {
-        width: 60vw;
-        /* margin-left: 10vw; */
-    }
     section .sec-title {
-        height: 30px;
+        /* height: 30px; */
         font-size: 16px;
         line-height: 30px;
     }
     article.text-area {
-        height: 380px;
+        /* height: 380px; */
         margin-bottom: 14px;
         padding: 15px;
     }
@@ -163,7 +142,6 @@
         background-position-y: center;
         background-repeat: no-repeat;
         width: 100%;
-        /* margin-bottom: initial; */
     }
     section article.flex-area {
         width: initial;
@@ -195,11 +173,11 @@
     footer nav#foot-menu {
         height: 62px;
     }
-    nav#foot-menu .white-menu {
+    nav#foot-menu ul li {
         margin-left: 283px; /* 768-(166*0.73*4) */
         margin-right: 35px; /* それとなく測った */
     }
-    nav#foot-menu .white-menu a {
+    nav#foot-menu ul li a {
         transform: scale(0.73);
     }
     footer .copyright {
