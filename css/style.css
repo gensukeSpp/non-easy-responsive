@@ -59,82 +59,71 @@ nav#above-menu ul li {
     border-left: 1px solid;
     width: 166px;
     height: 50px;
-    position: relative;
 }
-nav#above-menu ul li:nth-child(1):before {
+nav#above-menu ul li:nth-child(4) {
+    border-right: 1px solid;
+}
+nav#above-menu ul li:nth-child(1) a::before {
     content: url(../img/icon01.png);
     position: relative;
     top: 8px;
     left: 47px;
 }
-nav#above-menu ul li:nth-child(2):before {
+nav#above-menu ul li:nth-child(2) a::before {
     content: url(../img/icon02.png);
     position: relative;
     top: 8px;
     left: 32px
 }
-nav#above-menu ul li:nth-child(3):before {
+nav#above-menu ul li:nth-child(3) a::before {
     content: url(../img/icon03.png);
     position: relative;
     top: 8px;
     left: 30px;
 }
-nav#above-menu ul li:nth-child(4):before {
+nav#above-menu ul li:nth-child(4) a::before {
     content: url(../img/icon04.png);
     position: relative;
     top: 8px;
     left: 32px;
 }
-nav#above-menu ul li a:nth-child(4) {
-    border-right: 1px solid;
-}
-nav#above-menu ul li a {
-    font-family: 'メイリオ';
-    font-size: 13px;
-    /*bottom: 8px; /* 親高さ50px-13px-1em(13px)-上空間8px-(何となく微調整)8px */
-}
-nav#above-menu ul li a:nth-child(1) {
-    position: inherit;
-    bottom: 45px; /* 自フォント(13px*2)+兄弟フォント11px+空間+8px */
-    left: 77px;
-}
-nav#above-menu ul li a:nth-child(2) {
-    position: inherit;
-    bottom: 45px; /* 自フォント(13px*2)+兄弟フォント11px+空間+8px */
-    left: 65px;
-}
-nav#above-menu ul li a:nth-child(3) {
-    position: inherit;
-    bottom: 45px; /* 自フォント(13px*2)+兄弟フォント11px+空間+8px */
-    left: 63px;
-}
-nav#above-menu ul li a:nth-child(4) {
-    position: inherit;
-    bottom: 45px; /* 自フォント(13px*2)+兄弟フォント11px+空間+8px */
-    left: 63px;
-}
 nav#above-menu ul li a p {
     font-family: 'メイリオ';
-    font-size: 11px;
-    position: absolute; /* なぜか-50pxを補正 */
-    bottom: 8px; /* 下空間 */
+    font-size: 13px;
+    position: relative;
+    bottom: 30px;
 }
-nav#above-menu ul li a:nth-child(1) p {
-    position: absolute;
+nav#above-menu ul li:nth-child(1) a p {
+    left: 77px;
+}
+nav#above-menu ul li:nth-child(2) a p {
+    left: 65px;
+}
+nav#above-menu ul li:nth-child(3) a p {
+    left: 63px;
+}
+nav#above-menu ul li:nth-child(4) a p {
+    left: 63px;
+}
+nav#above-menu ul li a pre {
+    font-family: 'メイリオ';
+    font-size: 11px;
+    position: relative;
+    bottom: 30px; /* 理由はない */
+}
+nav#above-menu ul li:nth-child(1) a pre {
     left: 82px;
 }
-nav#above-menu ul li a:nth-child(2) p {
-    position: absolute;
+nav#above-menu ul li:nth-child(2) a pre {
     left: 78px;
 }
-nav#above-menu ul li a:nth-child(3) p {
-    position: absolute;
+nav#above-menu ul li:nth-child(3) a pre {
     left: 76px;
 }
-nav#above-menu ul li a:nth-child(4) p {
-    position: absolute;
+nav#above-menu ul li:nth-child(4) a pre {
     left: 76px;
 }
+
 header .head-slide {
     width: inherit;
     background-color: rgb(49, 51, 51);
@@ -152,33 +141,41 @@ header .head-slide .top-slide {
     background-image: url(../img/main.jpg);
 }
 
+
 main {
-    width: 960px;
+    max-width: 960px;
     margin: var(--item-center);
 }
-main aside {
-    float: left;
-    /* width: 305px; */
-    margin-top: 25px;
-}
-main aside::after {
+main::after {
     content: "";
     display: block;
     clear: both;
 }
-main aside #side-menu {
+main aside {
+    float: left;
+    width: max(25%, 305px);
+    margin-top: 25px;
+}
+/* main aside::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+main aside ul#side-menu {
     height: 249px;
     border: 1px solid;
 }
-aside ul#side-menu li a {
-    height: 48px;
+aside ul#side-menu li {
+    height: 49px;
+}
+aside ul#side-menu li:not(:last-child) {
+    border-bottom: 1px solid;
+}
+aside ul#side-menu li a p {
     font-family: 'メイリオ';
     font-size: 14px;
+    line-height: 49px;
     padding-left: 17px;
-    line-height: 48px;
-}
-aside ul#side-menu li a:not(:last-child) {
-    border-bottom: 1px solid;
 }
 /* aside a .side-banner {
     width: 304px;
@@ -196,38 +193,48 @@ aside a .side-banner {
 aside ul#square-banner {
     display: flex;
     flex-wrap: wrap;
-    width: 305px;
-    height: 305px;
+    /* width: 305px;
+    height: 305px; */
+    width: inherit;
+    height: 25%;
     background-color: rgb(235, 235, 235);
     padding: 5px;
     box-sizing: border-box;
 }
-ul#square-banner li a {
-    width: 137px;
-    height: 137px;
+ul#square-banner li {
+    width: 46%;
     margin: 5px;
 }
-ul#square-banner ul li a:nth-child(1) div {
+ul#square-banner li a div {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 136px;
+    /* margin: 5px; */
+}
+ul#square-banner li:nth-child(1) a div {
     background-image: url(../img/bn02.jpg);
 }
-ul#square-banner ul li a:nth-child(2) div {
+ul#square-banner li:nth-child(2) a div {
     background-image: url(../img/bn03.jpg);
 }
-ul#square-banner ul li a:nth-child(3) div {
+ul#square-banner li:nth-child(3) a div {
     background-image: url(../img/bn04.jpg);
 }
-ul#square-banner ul li a:nth-child(4) div {
+ul#square-banner li:nth-child(4) a div {
     background-image: url(../img/bn05.jpg);
 }
 
 section {
+    width: max(53%, 631px);
     margin-top: 25px;
-    /* margin-left: 22px; */
-    border: 1px solid;
     float: right;
 }
+/* main section::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
 section .sec-title {
-    height: 50px;
     font-family: 'メイリオ';
     font-size: 20px;
     color: white;
@@ -235,7 +242,7 @@ section .sec-title {
     line-height: 50px;
     padding-left: 14px;
 }
-article.text-area {
+section article.text-area {
     margin-bottom: 22px;
     padding: 23px;
     border: 1px solid;
@@ -243,22 +250,25 @@ article.text-area {
 article.text-area p.article-title {
     font-family: 'メイリオ';
     font-size: 20px;
+    margin-bottom: 10px;
 }
 /* article.text-area p.article-title:first-child {
     color: black;
 } */
-article.text-area p.article-title:nth-of-type(2) {
+article.text-area p.article-title:nth-of-type(3) {
     color: rgb(198, 26, 34);
 }
-article.text-area p.article-title:nth-of-type(3) {
+article.text-area p.article-title:nth-of-type(5) {
     color: rgb(0, 143, 59);
 }
 article.text-area p.article-text {
     font-family: 'メイリオ';
     font-size: 13px;
+    margin-bottom: 25px;
 }
 section a .main-banner {
-    width: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 98px;
     margin-bottom: 22px;
     /* background-color: var(--belt-color); */
@@ -302,12 +312,14 @@ footer {
 }
 footer .foot-banner {
     height: 125px;
-    display: flex;
+    /* display: flex;
 	align-items: center;
 	justify-content: center;
-	overflow: hidden;
+	overflow: hidden; */
+    padding: 24px;
+    box-sizing: border-box;
 }
-.foot-banner a .banner-img {
+.foot-banner a .banner-image {
     width: 798px;
     height: 77px;
     margin: auto;
@@ -318,83 +330,73 @@ footer nav#foot-menu {
     height: 78px;
     background-color: white;
 }
-nav#foot-menu ul li {
+nav#foot-menu ul {
     display: flex;
+    flex-wrap: wrap;
     height: inherit;
     margin-left: 416px; /* 960-(1200-164*4) */
 }
-nav#foot-menu ul li a {
-    /* display: inline-block; */
-    width: 166px;
-    height: 50px;
-    /* line-height: 78px; */
-    position: relative;
+nav#foot-menu ul li {
+    height: inherit;
 }
-nav#foot-menu ul li a:nth-child(1):before {
-    content: url(../img/icon01.png);
+nav#foot-menu ul li a {
     position: relative;
     top: 22px; /* 上空間8px+(foot-menu - white-menu)/2 */
+}
+nav#foot-menu ul li:nth-child(1) a::before {
+    content: url(../img/icon01.png);
     left: 47px;
 }
-nav#foot-menu ul li a:nth-child(2):before {
+nav#foot-menu ul li:nth-child(2) a::before {
     content: url(../img/icon02.png);
-    position: relative;
-    top: 22px; /* 上空間8px+(foot-menu - white-menu)/2 */
     left: 32px
 }
-nav#foot-menu ul li a:nth-child(3):before {
+nav#foot-menu ul li:nth-child(3) a::before {
     content: url(../img/icon03.png);
-    position: relative;
-    top: 22px; /* 上空間8px+(foot-menu - white-menu)/2 */
     left: 30px;
 }
-nav#foot-menu ul li a:nth-child(4):before {
+nav#foot-menu ul li:nth-child(4) a::before {
     content: url(../img/icon04.png);
-    position: relative;
-    top: 22px; /* 上空間8px+(foot-menu - white-menu)/2 */
     left: 32px;
 }
-nav#foot-menu ul li a {
+nav#foot-menu ul li a p {
+    width: 166px;
+    height: 50px;
     font-family: 'メイリオ';
     font-size: 13px;
+    position: relative;
+    left: 38px;
+    bottom: 35px; /* 78-30-(font-size)13 */
 }
-nav#foot-menu ul li a:nth-child(1) {
-    position: inherit;
-    bottom: 30px; /* 画像サイズ */
+/* nav#foot-menu ul li:nth-child(1) a p {
     left: 77px;
 }
-nav#foot-menu ul li a:nth-child(2) {
-    position: inherit;
-    bottom: 30px; /* 画像サイズ */
+nav#foot-menu ul li:nth-child(2) a p {
     left: 65px;
 }
-nav#foot-menu ul li a:nth-child(3) {
-    position: inherit;
-    bottom: 30px; /* 画像サイズ */
+nav#foot-menu ul li:nth-child(3) a p {
     left: 63px;
 }
-nav#foot-menu ul li a:nth-child(4) {
-    position: inherit;
-    bottom: 30px; /* 画像サイズ */
+nav#foot-menu ul li:nth-child(4) a p {
     left: 63px;
-}
-nav#foot-menu ul li a span {
+} */
+nav#foot-menu ul li a pre {
     font-family: 'メイリオ';
     font-size: 11px;
     position: relative;
-    bottom: 50px; /* positionの関係 */
+    bottom: 65px; /* (最下部まで行ったので)40+24+(font-size)11 */
 }
-nav#foot-menu ul li a:nth-child(1) p {
-    left: 82px;
+nav#foot-menu ul li:nth-child(1) a pre {
+    left: 40px;
 }
-nav#foot-menu ul li a:nth-child(2) p {
-    left: 78px;
+nav#foot-menu ul li:nth-child(2) a pre {
+    left: 49px;
 }
-nav#foot-menu ul li a:nth-child(3) p {
-    left: 76px;
+nav#foot-menu ul li:nth-child(3) a pre {
+    left: 50px;
 }
-nav#foot-menu ul li a:nth-child(4) p {
-    left: 76px;
+nav#foot-menu ul li:nth-child(4) a pre {
+    left: 50px;
 }
 footer .copyright {
     height: 40px;
@@ -402,5 +404,5 @@ footer .copyright {
 footer .copyright p {
     font-size: 12px;
     text-align: center;
-    line-height: 12px;
+    line-height: 40px;
 }
