@@ -4,7 +4,7 @@
     --tab-width: 64%;
 } */
 
-@media screen and (max-width: 1044px) {
+@media screen and (max-width: 959px) {
     #container {
         width: 100vw;
     }
@@ -14,10 +14,6 @@
 
     header #head-item {
         width: inherit;
-    }
-    header #head-item nav#above-menu {
-        width: min(72.5vw, 672px);
-        /* width: 685px; */
     }
     /* nav#above-menu ul li:nth-child(1) {
         width: 88px;
@@ -53,10 +49,9 @@
     nav#above-menu ul li:nth-child(4) {
         border-right: 1px solid;
     }
-    nav#above-menu ul li a p {
+    /* nav#above-menu ul li a p {
         font-size: 11px;
-        bottom: 39px; /* 自フォント(11px*2)+兄弟フォント9px+空間+8px */
-    }
+    } */
     nav#above-menu ul li:nth-child(1) a p {
         left: 42px; /* 元より-35px */
     }
@@ -97,8 +92,7 @@
 
 
     main {
-        width: inherit;
-        margin: 0 29px 0 29px;
+        margin: 0 3% 0 3%;
     }
     aside a .side-banner {
         background-size: contain;

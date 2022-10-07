@@ -62,7 +62,7 @@ header nav#above-menu::after {
 nav#above-menu ul li {
     display: inline-block;
     border-left: 1px solid;
-    width: calc(100vw * 0.17);
+    width: 24%;
     height: 50px;
 }
 nav#above-menu ul li:nth-child(4) {
@@ -99,7 +99,7 @@ nav#above-menu ul li a p {
     bottom: 30px;
 }
 nav#above-menu ul li:nth-child(1) a p {
-    left: 77px;
+    left: 79px;
 }
 nav#above-menu ul li:nth-child(2) a p {
     left: 65px;
@@ -134,7 +134,7 @@ header .head-slide {
     background-color: rgb(49, 51, 51);
 }
 header .head-slide .top-slide {
-    width: 960px;
+    max-width: 960px;
     height: 350px;
     /* background-color: var(--belt-color);
     font-family: 'メイリオ';
@@ -158,7 +158,7 @@ main::after {
 }
 main aside {
     float: left;
-    width: max(25%, 305px);
+    width: min(25vw, 305px);
     margin-top: 25px;
 }
 /* main aside::after {
@@ -229,7 +229,7 @@ ul#square-banner li:nth-child(4) a div {
 }
 
 section {
-    width: max(53%, 631px);
+    width: min(53vw, 631px);
     margin-top: 25px;
     float: right;
 }
