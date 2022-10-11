@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+@media screen and (max-width: 695px) {
+    #container .head-bar {
+        display: none;
+    }
+    header #head-item {
+        width: inherit;
+        height: 64px;
+    }
+    header #head-item .head-logo {
+        background-size: contain;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        width: 30%;
+        height: inherit;
+        margin-top: initial;
+    }
+    .hamburger {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        background: var(--belt-color);
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+    }  
+    /*ボタン内側*/
+    .hamburger span {
+        display: inline-block;
+        transition: all .4s;/*アニメーションの設定*/
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background: #fff;
+        width: 45%;
+    } 
+    .hamburger span:nth-of-type(1) {
+        top:15px; 
+    }
+    .hamburger span:nth-of-type(2) {
+        top:23px;
+    }
+    .hamburger span:nth-of-type(3) {
+        top:31px;
+    }
+    /*activeクラスが付与されると線が回転して×に*/  
+    .hamburger.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }    
+    .hamburger.active span:nth-of-type(2) {
+        opacity: 0;/*真ん中の線は透過*/
+    }
+    .hamburger.active span:nth-of-type(3) {
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+
+    header nav#above-menu {
+        /* display: none; */
+        width: 50%;
+        margin-top: 64px;
+        z-index: 10;
+    }
+    header nav#above-menu a {
+        width: 100%; /* 親要素のwidth */
+        border-left: initial;
+        border-bottom: 1px solid;
+        background-color: #fff;
+    }
+    nav#above-menu a:nth-child(odd):before {
+        left: 32px
+    }
+    nav#above-menu a:nth-child(4) {
+        border-right: initial;
+    }
+
+    header .head-slide .top-slide {
+        /* width: 80%;
+        padding:  0 20%;
+        box-sizing: border-box;
+        text-align: start; */
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../img/main.jpg);
+        width: 100%;
+        height: 300px;
+        z-index: 5;
+    }
+    
+    main {
+        width: inherit;
+        flex-wrap: wrap;
+    }
+    main nav {
+        float: none;
+        width: 90%;
+        height: 40%;
+        margin: var(--item-center);
+    }
+    main nav #side-menu {
+        display: none;
+    }
+    nav a .side-banner {
+        /* containでは、調整出来ず */
+        /* background-size: contain; */
+        /* background-size: cover; */
+        background-size: 90vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* width: 90vw; */
+        /* 縦横比157:44に対して
+           viewport320pxなら
+           81px
+           viewport425pxなら
+           107pxが理想 */
+        /* height: 27%; */
+        margin: 15px auto;
+    }
+    nav .square-banner {
+        width: 90vw;
+        height: 90vw;
+        /* margin: var(--item-center); */
+    }
+    nav .square-banner a div {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40%;
+        height: 40%;
+    }
+    section {
+        width: inherit;
+        height: 60%;
+        float: none;
+        margin-left: 0;
+    }
+    section .sec-title {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    article.text-area {
+        height: 377px;
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+    article.text-area p.article-title {
+        font-size: 11px;
+    }
+    article.text-area p.article-text {
+        font-size: 7px;
+        height: 81px;
+        overflow-y: hidden;
+    }
+    section a .main-banner {
+        /* background-size: cover; */
+        background-size: 96vw;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        /* width: inherit; */
+        /* 縦横比641:108に対して
+           viewport320pxなら
+           51px
+           viewport425pxなら
+           68pxが理想 */
+        /* height: 5%; */
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    section article.flex-area {
+        width: inherit;
+        height: 54%;
+    }
+    
+    article.flex-area div {
+        width: inherit;
+    }
+    article.flex-area div p.flex-title {
+        font-size: 12px;
+    }
+    article.flex-area div p.flex-text {
+        font-size: 12px;
+    }
+
+    footer {
+        height: 94px;
+    }
+    footer .foot-banner {
+        height: 74%; /* footer-.white-menu / 元の.foot-banner */
+    }
+    footer .foot-banner a .banner-img {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 90%;
+        height: 70%;
+        margin: var(--item-center);
+    }
+    footer nav#foot-menu {
+        display: none;
+    }
+    footer .copyright p {
+        font-size: 9px;
+        text-align: center;
+    }
+}

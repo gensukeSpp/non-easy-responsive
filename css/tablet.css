@@ -30,6 +30,10 @@
     /* nav#above-menu ul li a {
         position: relative;
     } */
+    /* nav#above-menu ul li a::before {
+        top: 8px;
+        left: 12px;
+    } */
     nav#above-menu ul li:nth-child(1) a::before {
         top: 8px;
         left: 12px;
@@ -46,40 +50,44 @@
         top: 8px;
         left: 12px;
     }
-    nav#above-menu ul li:nth-child(4) {
-        border-right: 1px solid;
-    }
     /* nav#above-menu ul li a p {
         font-size: 11px;
     } */
+    /* nav#above-menu ul li a p {
+        left: 45px;
+    } */
     nav#above-menu ul li:nth-child(1) a p {
-        left: 42px; /* 元より-35px */
+        left: 45px;
     }
     nav#above-menu ul li:nth-child(2) a p {
-        left: 45px; /* 元より-20px */
+        left: 45px;
     }
     nav#above-menu ul li:nth-child(3) a p {
-        left: 45px; /* 元より-18px */
+        left: 45px;
     }
     nav#above-menu ul li:nth-child(4) a p {
-        left: 41px; /* 元より-18px */
+        left: 45px;
     }
-    nav#above-menu ul li a pre {
-        font-family: 'メイリオ';
+    /* nav#above-menu ul li a pre {
         font-size: 9px;
-        bottom: 8px; /* 下空間 */
-    }
+        bottom: 31px;
+        left: 48px;
+    } */
     nav#above-menu ul li:nth-child(1) a pre {
-        left: 43px; /* 結局測った */
+        left: 48px; /* 結局測った */
+        bottom: 31px;
     }
     nav#above-menu ul li:nth-child(2) a pre {
-        left: 48px; /* 結局測った */
+        left: 48px;
+        bottom: 31px;
     }
     nav#above-menu ul li:nth-child(3) a pre {
-        left: 48px; /* 結局測った */
+        left: 48px;
+        bottom: 31px;
     }
     nav#above-menu ul li:nth-child(4) a pre {
-        left: 48px; /* 結局測った */
+        left: 48px;
+        bottom: 31px;
     }
 
     header .head-slide .top-slide {
