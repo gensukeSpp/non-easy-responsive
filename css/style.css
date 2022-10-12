@@ -158,7 +158,8 @@ main::after {
 }
 main aside {
     float: left;
-    width: min(34vw, 305px);
+    /* 960:305=768:x x=244 768:100=221:y */
+    width: min(32vw, 305px);
     margin-top: 25px;
 }
 /* main aside::after {
@@ -229,6 +230,7 @@ ul#square-banner li:nth-child(4) a div {
 }
 
 section {
+    /* 1200:631=768:x x=404 768:100=:y */
     width: min(53vw, 631px);
     margin-top: 25px;
     float: right;
@@ -335,12 +337,14 @@ footer nav#foot-menu {
     background-color: white;
 }
 nav#foot-menu ul {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     height: inherit;
-    margin-left: 416px; /* 960-(1200-164*4) */
+    margin-left: 35%; /* 960-(1200-164*4)=416 */
 }
 nav#foot-menu ul li {
+    display: inline-block;
+    width: 24%;
     height: inherit;
 }
 nav#foot-menu ul li a {
