@@ -14,6 +14,15 @@
 
     header #head-item {
         width: inherit;
+        height: 78px;
+    }
+    header #head-item .head-logo {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 22%;
+        /* 125:70=78:x */
+        height: 44px;
+        margin: 2% 0 0 2%;
     }
     /* nav#above-menu ul li:nth-child(1) {
         width: 88px;
@@ -73,6 +82,9 @@
         bottom: 31px;
         left: 48px;
     } */
+    header nav#above-menu {
+        margin-top: 2%;
+    }
     nav#above-menu ul li:nth-child(1) a pre {
         left: 48px;
         bottom: 31px;
@@ -131,14 +143,14 @@
         margin-bottom: 2%;
         padding: 15px;
     }
-    article.text-area p.article-title {
+    /* article.text-area p.article-title {
         font-size: 16px;
-    }    
-    article.text-area p.article-text {
+    }     */
+    /* article.text-area p.article-text {
         font-size: 12px;
         height: 75px;
         overflow: hidden;
-    }
+    } */
 
     section a .main-banner {
         background-size: contain;
@@ -150,13 +162,13 @@
 
     section article.flex-area {
         width: initial;
-        height: 352px;
+        /* height: 352px; */
         margin-bottom: 2.2%;
     }
-    article.flex-area div {
+    /* article.flex-area div {
         height: 98px;
         overflow: hidden;
-    }
+    } */
     /* article.flex-area div p.flex-title {
         font-size: 11px;
     }
@@ -169,6 +181,8 @@
     }
     footer .foot-banner {
         height: 95px;
+        /* 125:24=95:x */
+        padding: 18px;
     }
     footer .foot-banner a .banner-image {
         background-size: contain;
@@ -180,15 +194,22 @@
     footer nav#foot-menu {
         height: 62px;
     }
+    nav#foot-menu ul li {
+        /* (62-30)/2 */
+        top: 16px;
+    }
+    /* nav#foot-menu ul {
+        transform: scale(0.73);
+    } */
     /* nav#foot-menu ul li {
         margin-left: 283px; /* 768-(166*0.73*4) 
         margin-right: 35px; /* それとなく測った 
     } */
-    /* nav#foot-menu ul {
-        transform: scale(0.73);
-    } */
     footer .copyright {
         height: 29px;
-        font-size: 7px;
-    }          
+    }
+    footer .copyright p {
+        line-height: 29px;
+    }
+         
 }

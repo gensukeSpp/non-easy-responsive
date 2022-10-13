@@ -37,11 +37,9 @@ header #head-item {
     margin: var(--item-center);
 }
 header #head-item .head-logo {
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 21%;
+    width: 200px;
     height: 70px;
-    margin-top: 27px;
+    margin-top: 28px;
     background-image: url("../img/logo.jpg");
     float: left;
 }
@@ -337,8 +335,6 @@ footer nav#foot-menu {
     background-color: white;
 }
 nav#foot-menu ul {
-    /* display: flex; */
-    flex-wrap: wrap;
     height: inherit;
     margin-left: 35%; /* 960-(1200-164*4)=416 */
 }
@@ -346,8 +342,6 @@ nav#foot-menu ul li {
     display: inline-block;
     width: 24%;
     height: inherit;
-}
-nav#foot-menu ul li a {
     position: relative;
     top: 22px; /* 上空間8px+(foot-menu - white-menu)/2 */
 }
