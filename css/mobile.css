@@ -19,7 +19,7 @@
     .hamburger {
         position: absolute;
         right: 15px;
-        top: 15px;
+        top: 7px;
         background: var(--belt-color);
         cursor: pointer;
         width: 50px;
@@ -99,7 +99,6 @@
     
     main {
         width: inherit;
-        flex-wrap: wrap;
     }
     main aside {
         float: none;
@@ -127,8 +126,8 @@
     aside ul#square-banner li {
         /* background-size: contain;
         background-repeat: no-repeat; */
-        width: 47%;
-        height: 47%;
+        width: 46%;
+        height: 46%;
     }
     aside ul#square-banner li a div {
         height: 100%;
@@ -180,25 +179,31 @@
         font-size: 12px;
     } */
 
-    /* footer {
+    footer {
         height: 94px;
-    } */
-    /* footer .foot-banner {
-        height: 74%; /* footer-.white-menu / 元の.foot-banner 
-    } */
+    }
+    footer .foot-banner {
+        /* footer / 元の.foot-banner */
+        height: 74%;
+        padding: initial;
+    }
     footer .foot-banner a .banner-image {
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         width: 90%;
-        height: 70%;
+        height: 90%;
         margin: var(--item-center);
     }
     footer nav#foot-menu {
         display: none;
     }
+    footer .copyright {
+        height: 26%;
+    }
     footer .copyright p {
         /* font-size: 9px; */
         text-align: center;
+        line-height: 24px;
     }
 }

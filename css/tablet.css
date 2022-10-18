@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-/* :root {
-    --tab-width: 64%;
-} */
-
 @media screen and (max-width: 959px) {
     #container {
         width: 100vw;
@@ -20,8 +16,8 @@
         background-size: contain;
         background-repeat: no-repeat;
         width: 22%;
-        /* 125:70=78:x */
-        height: 44px;
+        /* 125:70=78:x x=42.68 */
+        height: 62%;
         margin: 2% 0 0 2%;
     }
     /* nav#above-menu ul li:nth-child(1) {
