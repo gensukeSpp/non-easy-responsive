@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media screen and (max-width: 695px) {
+@media screen and (max-width: 655px) {
     #container .head-bar {
         display: none;
     }
@@ -12,10 +12,11 @@
         background-size: contain;
         background-position-y: center;
         background-repeat: no-repeat;
-        width: 30%;
-        height: inherit;
-        margin-top: initial;
+        /* width: 30%; */
+        height: 62%;
+        margin: 2.5% 0 0 2.5%;
     }
+
     .hamburger {
         position: absolute;
         right: 15px;
@@ -81,6 +82,12 @@
     }
     nav#above-menu ul li a:nth-child(4) {
         border-right: initial;
+    }
+    nav#above-menu ul li a p {
+        font-size: 10px;
+    }
+    nav#above-menu ul li a pre {
+        font-size: 7px;
     }
 
     header .head-slide .top-slide {
@@ -159,7 +166,7 @@
     }
     section a .main-banner {
         background-size: contain;
-        background-position-y: center;
+        background-position: center;
         background-repeat: no-repeat;
         margin-top: 15px;
         margin-bottom: 15px;

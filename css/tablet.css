@@ -20,18 +20,6 @@
         height: 62%;
         margin: 2% 0 0 2%;
     }
-    /* nav#above-menu ul li:nth-child(1) {
-        width: 88px;
-    }
-    nav#above-menu ul li:nth-child(2) {
-        width: 107px;
-    }
-    nav#above-menu ul li:nth-child(3) {
-        width: 107px;
-    }
-    nav#above-menu ul li:nth-child(4) {
-        width: 105px;
-    } */
     /* nav#above-menu ul li a {
         position: relative;
     } */
@@ -39,47 +27,19 @@
         top: 8px;
         left: 12px;
     }
-    /* nav#above-menu ul li:nth-child(1) a::before {
-        top: 8px;
-        left: 12px;
-    }
-    nav#above-menu ul li:nth-child(2) a::before {
-        top: 8px;
-        left: 12px;
-    }
-    nav#above-menu ul li:nth-child(3) a::before {
-        top: 8px;
-        left: 12px;
-    }
-    nav#above-menu ul li:nth-child(4) a::before {
-        top: 8px;
-        left: 12px;
-    } */
-    /* nav#above-menu ul li a p {
-        font-size: 11px;
-    } */
     header #head-item nav#above-menu ul li a p {
         left: 45px;
+        font-size: clamp(0.625rem, 0.475rem + 0.56vw, 0.813rem);
     }
-    /* nav#above-menu ul li:nth-child(1) a p {
-        left: 45px;
-    }
-    nav#above-menu ul li:nth-child(2) a p {
-        left: 45px;
-    }
-    nav#above-menu ul li:nth-child(3) a p {
-        left: 45px;
-    }
-    nav#above-menu ul li:nth-child(4) a p {
-        left: 45px;
-    } */
     /* header #head-item nav#above-menu ul li a pre {
-        /* font-size: 9px; 
         bottom: 31px;
         left: 48px;
     } */
     header nav#above-menu {
         margin-top: 2%;
+    }
+    nav#above-menu ul li a pre {
+        font-size: clamp(0.438rem, 0.238rem + 0.75vw, 0.688rem);
     }
     nav#above-menu ul li:nth-child(1) a pre {
         left: 48px;
@@ -122,16 +82,23 @@
         height: 32vw;
     }
     aside ul#square-banner li {
-        background-size: 90%;
+        /* background-size: 90%;
         background-position: center;
-        background-repeat: no-repeat;
-        width: 45%;
-        height: 45%;
+        background-repeat: no-repeat; */
+        width: 46.5%;
+        /* height: 45%; */
+        margin: 1.6%;
     }
-
+    ul#square-banner li a div {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    
     section .sec-title {
         /* height: 30px; */
         /* font-size: 16px; */
+        font-size: clamp(1rem, 0.8rem + 0.75vw, 1.25rem);
         line-height: 30px;
     }
     section article.text-area {
@@ -139,14 +106,6 @@
         margin-bottom: 2%;
         padding: 15px;
     }
-    /* article.text-area p.article-title {
-        font-size: 16px;
-    }     */
-    /* article.text-area p.article-text {
-        font-size: 12px;
-        height: 75px;
-        overflow: hidden;
-    } */
 
     section a .main-banner {
         background-size: contain;
@@ -161,16 +120,6 @@
         /* height: 352px; */
         margin-bottom: 2.2%;
     }
-    /* article.flex-area div {
-        height: 98px;
-        overflow: hidden;
-    } */
-    /* article.flex-area div p.flex-title {
-        font-size: 11px;
-    }
-    article.flex-area div p.flex-text {
-        font-size: 11px;
-    } */
 
     footer {
         height: initial;
@@ -194,13 +143,13 @@
         /* (62-30)/2 */
         top: 16px;
     }
-    /* nav#foot-menu ul {
-        transform: scale(0.73);
-    } */
-    /* nav#foot-menu ul li {
-        margin-left: 283px; /* 768-(166*0.73*4) 
-        margin-right: 35px; /* それとなく測った 
-    } */
+    nav#foot-menu ul li a p {
+        font-size: clamp(0.625rem, 0.475rem + 0.56vw, 0.813rem);
+    }
+    nav#foot-menu ul li a pre {
+        font-size: clamp(0.438rem, 0.238rem + 0.75vw, 0.688rem);
+    }
+
     footer .copyright {
         height: 29px;
     }

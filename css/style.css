@@ -205,13 +205,13 @@ aside ul#square-banner {
     box-sizing: border-box;
 }
 ul#square-banner li {
-    width: 46.5%;
+    width: 137px;
     margin: 5px;
 }
 ul#square-banner li a div {
     background-size: contain;
     background-repeat: no-repeat;
-    height: 138px;
+    height: 137px;
     /* margin: 5px; */
 }
 ul#square-banner li:nth-child(1) a div {
@@ -370,18 +370,6 @@ nav#foot-menu ul li a p {
     left: 38px;
     bottom: 35px; /* 78-30-(font-size)13 */
 }
-/* nav#foot-menu ul li:nth-child(1) a p {
-    left: 77px;
-}
-nav#foot-menu ul li:nth-child(2) a p {
-    left: 65px;
-}
-nav#foot-menu ul li:nth-child(3) a p {
-    left: 63px;
-}
-nav#foot-menu ul li:nth-child(4) a p {
-    left: 63px;
-} */
 nav#foot-menu ul li a pre {
     font-family: 'メイリオ';
     font-size: 11px;

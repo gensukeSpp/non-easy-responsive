@@ -12,7 +12,7 @@ const toggleMenu = () => {
         aboveMenuElement.style.display = "none";
         hamburger.classList.remove('active');
     } else {
-        aboveMenuElement.style.display = "block";
+        aboveMenuElement.style.display = "none";
     }
 }
 
@@ -23,7 +23,7 @@ const toggleMenu = () => {
 //     }
 // }
 
-const deviceSize = 760;
+const deviceSize = 750;
 const switchByWidth = (windowWidth) => {
     if (windowWidth <= deviceSize) {
         aboveMenuElement.style.display = "none";
