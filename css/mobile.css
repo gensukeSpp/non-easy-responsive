@@ -84,10 +84,12 @@
         border-right: initial;
     }
     nav#above-menu ul li a p {
-        font-size: 10px;
+        /* font-size: 10px; */
+        font-size: clamp(0.625rem, 0.446rem + 0.9vw, 0.813rem);
     }
     nav#above-menu ul li a pre {
-        font-size: 7px;
+        /* font-size: 7px; */
+        font-size: clamp(0.438rem, 0.199rem + 1.19vw, 0.688rem);
     }
 
     header .head-slide .top-slide {
@@ -131,39 +133,36 @@
         /* margin: var(--item-center); */
     }
     aside ul#square-banner li {
-        /* background-size: contain;
-        background-repeat: no-repeat; */
-        width: 46%;
-        height: 46%;
+        width: 46.5%;
+        /* height: 45%; */
+        margin: 1.6%;
     }
-    aside ul#square-banner li a div {
+    ul#square-banner li a div {
+        background-size: contain;
+        background-repeat: no-repeat;
         height: 100%;
     }
 
 
     section {
-        width: inherit;
-        height: 60%;
+        width: 90vw;
+        /* height: 60%; */
         float: none;
-        margin-left: 0;
+        margin: var(--item-center);
     }
     section .sec-title {
-        /* font-size: 16px; */
-        margin-top: 10px;
+        margin-top: 1rem;
     }
     article.text-area {
-        /* height: 377px; */
         padding: 12px;
         margin-bottom: 10px;
     }
     /* article.text-area p.article-title {
-        font-size: 11px;
-    } */
-    article.text-area p.article-text {
-        /* font-size: 7px; */
-        height: 81px;
-        overflow-y: hidden;
+        font-size: 1rem;
     }
+    article.text-area p.article-text {
+        font-size: clamp(0.438rem, 0.079rem + 1.79vw, 0.813rem);
+    } */
     section a .main-banner {
         background-size: contain;
         background-position: center;
@@ -205,6 +204,13 @@
     footer nav#foot-menu {
         display: none;
     }
+    nav#foot-menu ul li a p {
+        font-size: clamp(0.625rem, 0.446rem + 0.9vw, 0.813rem);
+    }
+    nav#foot-menu ul li a pre {
+        font-size: clamp(0.438rem, 0.199rem + 1.19vw, 0.688rem);
+    }
+
     footer .copyright {
         height: 26%;
     }

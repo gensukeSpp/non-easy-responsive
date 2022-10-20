@@ -29,33 +29,26 @@
     }
     header #head-item nav#above-menu ul li a p {
         left: 45px;
-        font-size: clamp(0.625rem, 0.475rem + 0.56vw, 0.813rem);
+        font-size: clamp(0.625rem, 0.219rem + 0.99vw, 0.813rem);
     }
-    /* header #head-item nav#above-menu ul li a pre {
-        bottom: 31px;
-        left: 48px;
-    } */
     header nav#above-menu {
         margin-top: 2%;
     }
     nav#above-menu ul li a pre {
-        font-size: clamp(0.438rem, 0.238rem + 0.75vw, 0.688rem);
+        font-size: clamp(0.438rem, 0.032rem + 0.99vw, 0.625rem);
+        bottom: 31px;
     }
     nav#above-menu ul li:nth-child(1) a pre {
         left: 48px;
-        bottom: 31px;
     }
     nav#above-menu ul li:nth-child(2) a pre {
         left: 53px;
-        bottom: 31px;
     }
     nav#above-menu ul li:nth-child(3) a pre {
         left: 53px;
-        bottom: 31px;
     }
     nav#above-menu ul li:nth-child(4) a pre {
         left: 53px;
-        bottom: 31px;
     }
 
     header .head-slide .top-slide {
@@ -82,9 +75,6 @@
         height: 32vw;
     }
     aside ul#square-banner li {
-        /* background-size: 90%;
-        background-position: center;
-        background-repeat: no-repeat; */
         width: 46.5%;
         /* height: 45%; */
         margin: 1.6%;
@@ -97,14 +87,20 @@
     
     section .sec-title {
         /* height: 30px; */
-        /* font-size: 16px; */
-        font-size: clamp(1rem, 0.8rem + 0.75vw, 1.25rem);
+        font-size: 1rem;
+        /* font-size: clamp(1rem, 0.8rem + 0.75vw, 1.25rem); */
         line-height: 30px;
     }
     section article.text-area {
         /* height: 380px; */
         margin-bottom: 2%;
         padding: 15px;
+    }
+    article.text-area p.article-title {
+        font-size: 1rem;
+    }
+    article.text-area p.article-text {
+        font-size: clamp(0.625rem, 0.219rem + 0.99vw, 0.813rem);
     }
 
     section a .main-banner {
@@ -144,10 +140,10 @@
         top: 16px;
     }
     nav#foot-menu ul li a p {
-        font-size: clamp(0.625rem, 0.475rem + 0.56vw, 0.813rem);
+        font-size: clamp(0.625rem, 0.219rem + 0.99vw, 0.813rem);
     }
     nav#foot-menu ul li a pre {
-        font-size: clamp(0.438rem, 0.238rem + 0.75vw, 0.688rem);
+        font-size: clamp(0.438rem, 0.032rem + 0.99vw, 0.625rem);
     }
 
     footer .copyright {

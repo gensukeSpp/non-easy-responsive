@@ -66,35 +66,38 @@ nav#above-menu ul li {
 nav#above-menu ul li:nth-child(4) {
     border-right: 1px solid;
 }
+nav#above-menu ul li a {
+    position: relative;
+    bottom: 20px;
+}
+nav#above-menu ul li a::before {
+    top: 30px;
+}
 nav#above-menu ul li:nth-child(1) a::before {
     content: url(../img/icon01.png);
     position: relative;
-    top: 8px;
     left: 47px;
 }
 nav#above-menu ul li:nth-child(2) a::before {
     content: url(../img/icon02.png);
     position: relative;
-    top: 8px;
     left: 32px
 }
 nav#above-menu ul li:nth-child(3) a::before {
     content: url(../img/icon03.png);
     position: relative;
-    top: 8px;
     left: 30px;
 }
 nav#above-menu ul li:nth-child(4) a::before {
     content: url(../img/icon04.png);
     position: relative;
-    top: 8px;
     left: 32px;
 }
 nav#above-menu ul li a p {
     font-family: 'メイリオ';
     font-size: 13px;
     position: relative;
-    bottom: 30px;
+    bottom: 5px;
 }
 nav#above-menu ul li:nth-child(1) a p {
     left: 79px;
@@ -112,7 +115,7 @@ nav#above-menu ul li a pre {
     font-family: 'メイリオ';
     font-size: 11px;
     position: relative;
-    bottom: 30px; /* 理由はない */
+    bottom: 11px;
 }
 nav#above-menu ul li:nth-child(1) a pre {
     left: 82px;
@@ -167,13 +170,14 @@ main aside {
 } */
 main aside ul#side-menu {
     height: 249px;
-    border: 1px solid;
+    /* border: 1px solid; */
+    box-shadow: 0 0 2px 2px rgb(204, 204, 204);
 }
 aside ul#side-menu li {
     height: 49px;
 }
 aside ul#side-menu li:not(:last-child) {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgb(204, 204, 204);
 }
 aside ul#side-menu li a p {
     font-family: 'メイリオ';
@@ -203,6 +207,7 @@ aside ul#square-banner {
     background-color: rgb(235, 235, 235);
     padding: 5px;
     box-sizing: border-box;
+    box-shadow: 0 0 2px 2px rgb(204, 204, 204);
 }
 ul#square-banner li {
     width: 137px;
@@ -249,16 +254,14 @@ section .sec-title {
 section article.text-area {
     margin-bottom: 22px;
     padding: 23px;
-    border: 1px solid;
+    /* border: 1px solid; */
+    box-shadow: 0 0 2px 2px rgb(204, 204, 204);
 }
 article.text-area p.article-title {
     font-family: 'メイリオ';
     font-size: 20px;
     margin-bottom: 10px;
 }
-/* article.text-area p.article-title:first-child {
-    color: black;
-} */
 article.text-area p.article-title:nth-of-type(3) {
     color: rgb(198, 26, 34);
 }
@@ -281,12 +284,11 @@ section a .main-banner {
 section article.flex-area {
     display: flex;
     flex-wrap: wrap;
-    /* width: 629px;
-    height: 319px; */
     padding: 9px;
-    border: 1px solid;
+    /* border: 1px solid; */
     margin-bottom: 25px;
     box-sizing: border-box;
+    box-shadow: 0 0 2px 2px rgb(204, 204, 204);
 }
 article.flex-area div {
     width: 183px;
@@ -294,6 +296,7 @@ article.flex-area div {
 }
 article.flex-area div p.flex-title {
     font-family: 'メイリオ';
+    /* font-size: 0.875em; */
     font-size: 14px;
     font-weight: bold;
     border-bottom: 1px solid;
@@ -306,6 +309,7 @@ p.flex-title::before {
 }
 article.flex-area div p.flex-text {
     font-family: 'メイリオ';
+    /* font-size: 0.875em; */
     font-size: 14px;
 }
 
@@ -342,8 +346,6 @@ nav#foot-menu ul li {
     display: inline-block;
     width: 24%;
     height: inherit;
-    position: relative;
-    top: 22px; /* 上空間8px+(foot-menu - white-menu)/2 */
 }
 nav#foot-menu ul li:nth-child(1) a::before {
     content: url(../img/icon01.png);
@@ -362,19 +364,17 @@ nav#foot-menu ul li:nth-child(4) a::before {
     left: 32px;
 }
 nav#foot-menu ul li a p {
-    width: 166px;
-    height: 50px;
     font-family: 'メイリオ';
     font-size: 13px;
     position: relative;
     left: 38px;
-    bottom: 35px; /* 78-30-(font-size)13 */
+    bottom: 13px; /* (font-size)13 */
 }
 nav#foot-menu ul li a pre {
     font-family: 'メイリオ';
     font-size: 11px;
     position: relative;
-    bottom: 65px; /* (最下部まで行ったので)40+24+(font-size)11 */
+    bottom: 17px; /* pre高さ1個分 */
 }
 nav#foot-menu ul li:nth-child(1) a pre {
     left: 40px;
