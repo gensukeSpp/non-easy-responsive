@@ -87,9 +87,17 @@
         /* font-size: 10px; */
         font-size: clamp(0.625rem, 0.446rem + 0.9vw, 0.813rem);
     }
-    nav#above-menu ul li a pre {
+    nav#above-menu ul li:nth-child(1) a p {
+        left: 63px;
+    }
+    #container header nav#above-menu ul li a pre {
+        left: 70px;
+        bottom: 7px;
         /* font-size: 7px; */
         font-size: clamp(0.438rem, 0.199rem + 1.19vw, 0.688rem);
+    }
+    #container header nav#above-menu ul li:nth-child(1) a pre {
+        left: 64px;
     }
 
     header .head-slide .top-slide {

@@ -101,15 +101,19 @@ nav#above-menu ul li a p {
 }
 nav#above-menu ul li:nth-child(1) a p {
     left: 79px;
+    width: calc(100% - 79px);
 }
 nav#above-menu ul li:nth-child(2) a p {
     left: 65px;
+    width: calc(100% - 65px);
 }
 nav#above-menu ul li:nth-child(3) a p {
     left: 63px;
+    width: calc(100% - 63px);
 }
 nav#above-menu ul li:nth-child(4) a p {
     left: 63px;
+    width: calc(100% - 63px);
 }
 nav#above-menu ul li a pre {
     font-family: 'メイリオ';
@@ -119,15 +123,19 @@ nav#above-menu ul li a pre {
 }
 nav#above-menu ul li:nth-child(1) a pre {
     left: 82px;
+    width: calc(100% - 82px);
 }
 nav#above-menu ul li:nth-child(2) a pre {
     left: 78px;
+    width: calc(100% - 78px);
 }
 nav#above-menu ul li:nth-child(3) a pre {
     left: 76px;
+    width: calc(100% - 76px);
 }
 nav#above-menu ul li:nth-child(4) a pre {
     left: 76px;
+    width: calc(100% - 76px);
 }
 
 header .head-slide {
@@ -347,28 +355,34 @@ nav#foot-menu ul li {
     width: 24%;
     height: inherit;
 }
+nav#foot-menu ul li a::before {
+    position: relative;
+    /* 微調整の末 */
+    top: 23px;
+}
 nav#foot-menu ul li:nth-child(1) a::before {
     content: url(../img/icon01.png);
-    left: 47px;
+    /* left: 47px; */
 }
 nav#foot-menu ul li:nth-child(2) a::before {
     content: url(../img/icon02.png);
-    left: 32px
+    /* left: 32px */
 }
 nav#foot-menu ul li:nth-child(3) a::before {
     content: url(../img/icon03.png);
-    left: 30px;
+    /* left: 30px; */
 }
 nav#foot-menu ul li:nth-child(4) a::before {
     content: url(../img/icon04.png);
-    left: 32px;
+    /* left: 32px; */
 }
 nav#foot-menu ul li a p {
     font-family: 'メイリオ';
     font-size: 13px;
     position: relative;
-    left: 38px;
+    left: 35px;
     bottom: 13px; /* (font-size)13 */
+    width: calc(100% - 35px);
 }
 nav#foot-menu ul li a pre {
     font-family: 'メイリオ';
@@ -377,16 +391,20 @@ nav#foot-menu ul li a pre {
     bottom: 17px; /* pre高さ1個分 */
 }
 nav#foot-menu ul li:nth-child(1) a pre {
-    left: 40px;
+    left: 38px;
+    width: calc(100% - 38px);
 }
 nav#foot-menu ul li:nth-child(2) a pre {
-    left: 49px;
+    left: 47px;
+    width: calc(100% - 47px);
 }
 nav#foot-menu ul li:nth-child(3) a pre {
-    left: 50px;
+    left: 48px;
+    width: calc(100% - 48px);
 }
 nav#foot-menu ul li:nth-child(4) a pre {
-    left: 50px;
+    left: 48px;
+    width: calc(100% - 48px);
 }
 footer .copyright {
     height: 40px;

@@ -20,35 +20,41 @@
         height: 62%;
         margin: 2% 0 0 2%;
     }
-    /* nav#above-menu ul li a {
-        position: relative;
-    } */
+    nav#above-menu ul li a {
+        bottom: 14px;
+    }
     header #head-item nav#above-menu ul li a::before {
-        top: 8px;
-        left: 12px;
+        top: 45%;
+        left: 20%;
     }
     header #head-item nav#above-menu ul li a p {
-        left: 45px;
+        left: 45%;
+        bottom: 10px;
         font-size: clamp(0.625rem, 0.219rem + 0.99vw, 0.813rem);
+        width: 65%;
     }
     header nav#above-menu {
         margin-top: 2%;
     }
     nav#above-menu ul li a pre {
         font-size: clamp(0.438rem, 0.032rem + 0.99vw, 0.625rem);
-        bottom: 31px;
+        /* bottom: 31px; */
     }
     nav#above-menu ul li:nth-child(1) a pre {
-        left: 48px;
+        left: 58px;
+        width: calc(100% - 58px);
     }
     nav#above-menu ul li:nth-child(2) a pre {
-        left: 53px;
+        left: 63px;
+        width: calc(100% - 63px);
     }
     nav#above-menu ul li:nth-child(3) a pre {
-        left: 53px;
+        left: 63px;
+        width: calc(100% - 63px);
     }
     nav#above-menu ul li:nth-child(4) a pre {
-        left: 53px;
+        left: 63px;
+        width: calc(100% - 63px);
     }
 
     header .head-slide .top-slide {
@@ -142,15 +148,20 @@
     nav#foot-menu ul li a p {
         font-size: clamp(0.625rem, 0.219rem + 0.99vw, 0.813rem);
     }
-    nav#foot-menu ul li a pre {
+    #container footer nav#foot-menu ul li a pre {
+        left: 42px;
+        width: calc(100% - 42px);
         font-size: clamp(0.438rem, 0.032rem + 0.99vw, 0.625rem);
     }
-
+    #container footer nav#foot-menu ul li:nth-child(1) a pre {
+        left: 36px;
+        width: calc(100% - 36px);
+    }
+    
     footer .copyright {
         height: 29px;
     }
     footer .copyright p {
         line-height: 29px;
-    }
-         
+    }         
 }
