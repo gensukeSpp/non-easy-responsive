@@ -23,7 +23,7 @@ const toggleMenu = () => {
 //     }
 // }
 
-const deviceSize = 750;
+const deviceSize = 655;
 const switchByWidth = (windowWidth) => {
     if (windowWidth <= deviceSize) {
         aboveMenuElement.style.display = "none";

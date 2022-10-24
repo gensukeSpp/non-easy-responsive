@@ -43,6 +43,54 @@ header #head-item .head-logo {
     background-image: url("../img/logo.jpg");
     float: left;
 }
+
+.hamburger {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    background: var(--belt-color);
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}  
+/*ボタン内側*/
+.hamburger span {
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    width: 45%;
+} 
+.hamburger span:nth-of-type(1) {
+    top:15px; 
+}
+.hamburger span:nth-of-type(2) {
+    top:23px;
+}
+.hamburger span:nth-of-type(3) {
+    top:31px;
+}
+/*activeクラスが付与されると線が回転して×に*/  
+.hamburger.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}    
+.hamburger.active span:nth-of-type(2) {
+    opacity: 0;/*真ん中の線は透過*/
+}
+.hamburger.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
 header nav#above-menu {
     width: 70%;
     height: 50px;
@@ -200,9 +248,9 @@ aside ul#side-menu li a p {
     margin-bottom: 20px;
     background-color: var(--belt-color);
 } */
-aside a .side-banner {
-    height: 78px;
-    background-image: url(../img/bn01.png);
+main aside a img {
+    /* height: 78px; */
+    /* background-image: url(../img/bn01.png); */
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -221,13 +269,13 @@ ul#square-banner li {
     width: 137px;
     margin: 5px;
 }
-ul#square-banner li a div {
-    background-size: contain;
-    background-repeat: no-repeat;
+ul#square-banner li a img {
+    /* background-size: contain;
+    background-repeat: no-repeat; */
     height: 137px;
-    /* margin: 5px; */
+    margin: initial;
 }
-ul#square-banner li:nth-child(1) a div {
+/* ul#square-banner li:nth-child(1) a div {
     background-image: url(../img/bn02.jpg);
 }
 ul#square-banner li:nth-child(2) a div {
@@ -238,7 +286,7 @@ ul#square-banner li:nth-child(3) a div {
 }
 ul#square-banner li:nth-child(4) a div {
     background-image: url(../img/bn05.jpg);
-}
+} */
 
 section {
     /* 1200:631=768:x x=404 768:100=:y */
@@ -281,13 +329,14 @@ article.text-area p.article-text {
     font-size: 13px;
     margin-bottom: 25px;
 }
-section a .main-banner {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 98px;
+
+main section a img {
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    /* height: 98px; */
     margin-bottom: 22px;
     /* background-color: var(--belt-color); */
-    background-image: url(../img/bn06.png);
+    /* background-image: url(../img/bn06.png); */
 }
 section article.flex-area {
     display: flex;
@@ -328,19 +377,19 @@ footer {
 }
 footer .foot-banner {
     height: 125px;
-    /* display: flex;
+    display: flex;
 	align-items: center;
 	justify-content: center;
-	overflow: hidden; */
+	overflow: hidden;
     padding: 24px;
     box-sizing: border-box;
 }
-.foot-banner a .banner-image {
+.foot-banner a img {
     width: 798px;
     height: 77px;
-    margin: auto;
+    /* margin: auto; */
     /* background-color: var(--belt-color); */
-    background-image: url(../img/bn07.png);
+    /* background-image: url(../img/bn07.png); */
 }
 footer nav#foot-menu {
     height: 78px;

@@ -69,10 +69,10 @@
     main {
         margin: 0 3% 0 3%;
     }
-    aside a .side-banner {
-        background-size: contain;
+    main aside a img {
+        /* background-size: contain;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
         width: 100%;
     }
 
@@ -85,10 +85,10 @@
         /* height: 45%; */
         margin: 1.6%;
     }
-    ul#square-banner li a div {
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 100%;
+    ul#square-banner li a img {
+        /* background-size: contain;
+        background-repeat: no-repeat; */
+        height: 96%;
     }
     
     section .sec-title {
@@ -109,10 +109,10 @@
         font-size: clamp(0.625rem, 0.219rem + 0.99vw, 0.813rem);
     }
 
-    section a .main-banner {
-        background-size: contain;
+    main section a img {
+        /* background-size: contain;
         background-position-y: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
         width: 100%;
         margin-bottom: 2%;
     }
@@ -131,12 +131,15 @@
         /* 125:24=95:x */
         padding: 18px;
     }
-    footer .foot-banner a .banner-image {
-        background-size: contain;
-        background-repeat: no-repeat;
+    footer .foot-banner a {
+        text-align: center;
+    }
+    footer .foot-banner a img {
+        /* background-size: contain;
         background-position: center;
-        width: 100%;
-        height: 100%;
+        background-repeat: no-repeat; */
+        width: 90%;
+        height: 90%;
     }
     footer nav#foot-menu {
         height: 62px;

@@ -17,53 +17,6 @@
         margin: 2.5% 0 0 2.5%;
     }
 
-    .hamburger {
-        position: absolute;
-        right: 15px;
-        top: 7px;
-        background: var(--belt-color);
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
-        border-radius: 5px;
-    }  
-    /*ボタン内側*/
-    .hamburger span {
-        display: inline-block;
-        transition: all .4s;/*アニメーションの設定*/
-        position: absolute;
-        left: 14px;
-        height: 3px;
-        border-radius: 2px;
-        background: #fff;
-        width: 45%;
-    } 
-    .hamburger span:nth-of-type(1) {
-        top:15px; 
-    }
-    .hamburger span:nth-of-type(2) {
-        top:23px;
-    }
-    .hamburger span:nth-of-type(3) {
-        top:31px;
-    }
-    /*activeクラスが付与されると線が回転して×に*/  
-    .hamburger.active span:nth-of-type(1) {
-        top: 18px;
-        left: 18px;
-        transform: translateY(6px) rotate(-45deg);
-        width: 30%;
-    }    
-    .hamburger.active span:nth-of-type(2) {
-        opacity: 0;/*真ん中の線は透過*/
-    }
-    .hamburger.active span:nth-of-type(3) {
-        top: 30px;
-        left: 18px;
-        transform: translateY(-6px) rotate(45deg);
-        width: 30%;
-    }
-
     /* ハンバーガーから表示 */
     header nav#above-menu {
         /* display: none; */
@@ -126,13 +79,14 @@
     main aside #side-menu {
         display: none;
     }
-    aside a .side-banner {
+    main aside a img {
         /* containでは、調整出来ず */
         /* background-size: contain; */
         /* background-size: cover; */
-        background-size: 90vw;
+        /* background-size: 90vw;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
+        width: 100%;
         margin: 15px auto;
     }
     aside ul#square-banner {
@@ -145,7 +99,7 @@
         /* height: 45%; */
         margin: 1.6%;
     }
-    ul#square-banner li a div {
+    ul#square-banner li a img {
         background-size: contain;
         background-repeat: no-repeat;
         height: 100%;
@@ -161,7 +115,7 @@
     section .sec-title {
         margin-top: 1rem;
     }
-    article.text-area {
+    section article.text-area {
         padding: 12px;
         margin-bottom: 10px;
     }
@@ -171,10 +125,11 @@
     article.text-area p.article-text {
         font-size: clamp(0.438rem, 0.079rem + 1.79vw, 0.813rem);
     } */
-    section a .main-banner {
-        background-size: contain;
+    main section a img {
+        /* background-size: contain;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
+        width: 90vw;
         margin-top: 15px;
         margin-bottom: 15px;
     }
@@ -201,13 +156,15 @@
         height: 74%;
         padding: initial;
     }
-    footer .foot-banner a .banner-image {
-        background-size: contain;
+    footer .foot-banner a {
+        text-align: center;
+    }
+    footer .foot-banner a img {
+        /* background-size: contain;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
         width: 90%;
         height: 90%;
-        margin: var(--item-center);
     }
     footer nav#foot-menu {
         display: none;
