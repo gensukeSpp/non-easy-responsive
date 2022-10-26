@@ -4,6 +4,7 @@ let aboveMenuElement = document.getElementById("above-menu");
 // let menuStyle = aboveMenuElement.style.display;
 // menuStyle = "block";
 
+// hamburger.style.display = "none";
 const toggleMenu = () => {
     if (aboveMenuElement.style.display == "none") {
         aboveMenuElement.style.display = "block";
@@ -25,6 +26,9 @@ const toggleMenu = () => {
 
 const deviceSize = 655;
 const switchByWidth = (windowWidth) => {
+    let vw = window.innerWidth;
+    windowWidth = vw;
+    console.log(`width -> ${windowWidth}`)
     if (windowWidth <= deviceSize) {
         aboveMenuElement.style.display = "none";
         hamburger.style.display = "block";
@@ -36,15 +40,17 @@ const switchByWidth = (windowWidth) => {
 
 // 下記 https://into-the-program.com/javascript-run-after-resize/ から引用
 const resize = () => {
- 
+
+    // reloadメソッドによりページをリロード
+    // window.location.reload();
+
     let timeoutID = 0;
     let delay = 500;
-    // let vw = window.innerWidth;
  
     window.addEventListener("resize", ()=>{
         clearTimeout(timeoutID);
         timeoutID = setTimeout(()=>{
- 
+
             //ここにリサイズした後に実行したい処理を記述
             let vw = window.innerWidth;
             // vw setTimeout内が正しいようだ
@@ -54,6 +60,7 @@ const resize = () => {
         }, delay);
     }, false);
 };
- 
+
+window.addEventListener('load', switchByWidth);
 window.addEventListener('load', resize);
 hamburger.addEventListener('click', toggleMenu, false);

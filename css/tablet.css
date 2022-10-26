@@ -70,9 +70,6 @@
         margin: 0 3% 0 3%;
     }
     main aside a img {
-        /* background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat; */
         width: 100%;
     }
 
@@ -86,8 +83,6 @@
         margin: 1.6%;
     }
     ul#square-banner li a img {
-        /* background-size: contain;
-        background-repeat: no-repeat; */
         height: 96%;
     }
     
@@ -110,9 +105,6 @@
     }
 
     main section a img {
-        /* background-size: contain;
-        background-position-y: center;
-        background-repeat: no-repeat; */
         width: 100%;
         margin-bottom: 2%;
     }
@@ -135,9 +127,6 @@
         text-align: center;
     }
     footer .foot-banner a img {
-        /* background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat; */
         width: 90%;
         height: 90%;
     }

@@ -121,6 +121,10 @@ nav#above-menu ul li a {
 nav#above-menu ul li a::before {
     top: 30px;
 }
+nav#above-menu ul li:hover {
+    background-color: grey;
+    opacity: .7;
+}
 nav#above-menu ul li:nth-child(1) a::before {
     content: url(../img/icon01.png);
     position: relative;
@@ -232,6 +236,10 @@ main aside ul#side-menu {
 aside ul#side-menu li {
     height: 49px;
 }
+aside ul#side-menu li:hover {
+    background-color: gray;
+    opacity: .7;
+}
 aside ul#side-menu li:not(:last-child) {
     border-bottom: 1px solid rgb(204, 204, 204);
 }
@@ -270,8 +278,6 @@ ul#square-banner li {
     margin: 5px;
 }
 ul#square-banner li a img {
-    /* background-size: contain;
-    background-repeat: no-repeat; */
     height: 137px;
     margin: initial;
 }
@@ -331,8 +337,6 @@ article.text-area p.article-text {
 }
 
 main section a img {
-    /* background-size: cover;
-    background-repeat: no-repeat; */
     /* height: 98px; */
     margin-bottom: 22px;
     /* background-color: var(--belt-color); */
@@ -387,7 +391,6 @@ footer .foot-banner {
 .foot-banner a img {
     width: 798px;
     height: 77px;
-    /* margin: auto; */
     /* background-color: var(--belt-color); */
     /* background-image: url(../img/bn07.png); */
 }
@@ -408,6 +411,10 @@ nav#foot-menu ul li a::before {
     position: relative;
     /* 微調整の末 */
     top: 23px;
+}
+nav#foot-menu ul li:hover {
+    background-color: gray;
+    opacity: .7;
 }
 nav#foot-menu ul li:nth-child(1) a::before {
     content: url(../img/icon01.png);

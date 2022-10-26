@@ -80,12 +80,6 @@
         display: none;
     }
     main aside a img {
-        /* containでは、調整出来ず */
-        /* background-size: contain; */
-        /* background-size: cover; */
-        /* background-size: 90vw;
-        background-position: center;
-        background-repeat: no-repeat; */
         width: 100%;
         margin: 15px auto;
     }
@@ -126,9 +120,6 @@
         font-size: clamp(0.438rem, 0.079rem + 1.79vw, 0.813rem);
     } */
     main section a img {
-        /* background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat; */
         width: 90vw;
         margin-top: 15px;
         margin-bottom: 15px;
@@ -160,9 +151,6 @@
         text-align: center;
     }
     footer .foot-banner a img {
-        /* background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat; */
         width: 90%;
         height: 90%;
     }
@@ -183,5 +171,23 @@
         /* font-size: 9px; */
         text-align: center;
         line-height: 24px;
+    }
+
+    .is-animation {
+        animation: myanimation 1s ease-in;
+    }
+    @keyframes myanimation {
+        0% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+        75% {
+            opacity: 0.75;
+            transform: scale(1);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
     }
 }
