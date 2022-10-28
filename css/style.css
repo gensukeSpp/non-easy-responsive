@@ -15,11 +15,15 @@ h1 {
 #container .head-bar {
     height: 30px;
     background-color: var(--belt-color);
+    box-shadow: 0 0 3px 3px rgb(0, 0, 0, .8);
+        /* box-shadowが効かない場合 */
+    position: relative;
 }
 .head-bar div {
     width: 960px;
     font-family: 'メイリオ';
     font-size: 11px;
+    color: white;
     margin: var(--item-center); /* if position: absolute->！効かない */
     position: relative;
     top: 25%;
@@ -117,6 +121,8 @@ nav#above-menu ul li:nth-child(4) {
 nav#above-menu ul li a {
     position: relative;
     bottom: 20px;
+    text-decoration: none;
+    color: black;
 }
 nav#above-menu ul li a::before {
     top: 30px;
@@ -242,6 +248,10 @@ aside ul#side-menu li:hover {
 }
 aside ul#side-menu li:not(:last-child) {
     border-bottom: 1px solid rgb(204, 204, 204);
+}
+aside ul#side-menu li a {
+    text-decoration: none;
+    color: black;    
 }
 aside ul#side-menu li a p {
     font-family: 'メイリオ';
@@ -372,6 +382,8 @@ article.flex-area div p.flex-text {
     font-family: 'メイリオ';
     /* font-size: 0.875em; */
     font-size: 14px;
+    padding-bottom: 32px;
+    padding-right: 11%;
 }
 
 footer {
@@ -397,6 +409,7 @@ footer .foot-banner {
 footer nav#foot-menu {
     height: 78px;
     background-color: white;
+    box-shadow: 0 0 2px 2px rgb(0, 0, 0, .2);
 }
 nav#foot-menu ul {
     height: inherit;
@@ -407,14 +420,18 @@ nav#foot-menu ul li {
     width: 24%;
     height: inherit;
 }
+nav#foot-menu ul li:hover {
+    background-color: gray;
+    opacity: .7;
+}
 nav#foot-menu ul li a::before {
     position: relative;
     /* 微調整の末 */
     top: 23px;
 }
-nav#foot-menu ul li:hover {
-    background-color: gray;
-    opacity: .7;
+nav#foot-menu ul li a {
+    text-decoration: none;
+    color: black;
 }
 nav#foot-menu ul li:nth-child(1) a::before {
     content: url(../img/icon01.png);

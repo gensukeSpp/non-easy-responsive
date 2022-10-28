@@ -134,10 +134,12 @@
     }
     /* article.flex-area div p.flex-title {
         font-size: 12px;
-    }
-    article.flex-area div p.flex-text {
-        font-size: 12px;
     } */
+    article.flex-area div p.flex-text {
+        /* font-size: 12px; */
+        padding-bottom: 16px;
+        padding-right: initial;
+    }
 
     footer {
         height: 94px;
@@ -164,11 +166,9 @@
         font-size: clamp(0.438rem, 0.199rem + 1.19vw, 0.688rem);
     }
 
-    footer .copyright {
-        height: 26%;
-    }
     footer .copyright p {
         /* font-size: 9px; */
+        font-size: clamp(0.5rem, 0.261rem + 1.19vw, 0.75rem);
         text-align: center;
         line-height: 24px;
     }
