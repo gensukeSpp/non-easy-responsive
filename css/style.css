@@ -267,7 +267,8 @@ aside ul#side-menu li a p {
     background-color: var(--belt-color);
 } */
 main aside a img {
-    /* height: 78px; */
+    width: 304px;
+    height: 78px;
     /* background-image: url(../img/bn01.png); */
     margin-top: 20px;
     margin-bottom: 20px;
@@ -285,6 +286,7 @@ aside ul#square-banner {
 }
 ul#square-banner li {
     width: 137px;
+    height: 137px;
     margin: 5px;
 }
 ul#square-banner li a img {

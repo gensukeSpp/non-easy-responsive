@@ -86,17 +86,15 @@
     aside ul#square-banner {
         width: 90vw;
         height: 90vw;
-        /* margin: var(--item-center); */
+        padding: 1.6%;
     }
     aside ul#square-banner li {
-        width: 46.5%;
-        /* height: 45%; */
+        width: calc(90vw/2 - 5%);
+        height: calc(90vw/2 - 5%);
         margin: 1.6%;
     }
     ul#square-banner li a img {
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 100%;
+        height: initial;
     }
 
 
