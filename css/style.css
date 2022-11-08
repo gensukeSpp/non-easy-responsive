@@ -364,8 +364,8 @@ section article.flex-area {
     box-shadow: 0 0 2px 2px rgb(204, 204, 204);
 }
 article.flex-area div {
-    width: 183px;
-    margin: auto;
+    width: 184px;
+    margin: var(--item-center);
 }
 article.flex-area div p.flex-title {
     font-family: 'メイリオ';
@@ -384,8 +384,7 @@ article.flex-area div p.flex-text {
     font-family: 'メイリオ';
     /* font-size: 0.875em; */
     font-size: 14px;
-    padding-bottom: 32px;
-    padding-right: 11%;
+    margin: 7% 11% 26% 0;
 }
 
 footer {
@@ -396,9 +395,8 @@ footer {
 footer .foot-banner {
     height: 125px;
     display: flex;
-	align-items: center;
+	/* align-items: center; */
 	justify-content: center;
-	overflow: hidden;
     padding: 24px;
     box-sizing: border-box;
 }

@@ -143,16 +143,14 @@
         height: 94px;
     }
     footer .foot-banner {
-        /* footer / 元の.foot-banner */
-        height: 74%;
+        width: 90%;
+        height: initial;
+        margin: var(--item-center);
         padding: initial;
     }
-    footer .foot-banner a {
-        text-align: center;
-    }
     footer .foot-banner a img {
-        width: 90%;
         height: 50px;
+        margin-top: 14px;
     }
     footer nav#foot-menu {
         display: none;
@@ -164,7 +162,11 @@
         font-size: clamp(0.438rem, 0.199rem + 1.19vw, 0.688rem);
     }
 
+    footer .copyright {
+        height: initial;
+    }
     footer .copyright p {
+        height: initial;
         /* font-size: 9px; */
         font-size: clamp(0.5rem, 0.261rem + 1.19vw, 0.75rem);
         text-align: center;
