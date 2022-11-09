@@ -128,7 +128,9 @@
         padding: 20px;
     }
     article.flex-area div {
-        width: inherit;
+        /* width when viewport320px */
+        max-width: 248px;
+        padding-bottom: initial;
     }
     /* article.flex-area div p.flex-title {
         font-size: 12px;

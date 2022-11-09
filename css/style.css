@@ -276,6 +276,7 @@ main aside a img {
 aside ul#square-banner {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     /* width: 305px; */
     width: inherit;
     height: 305px;
@@ -366,6 +367,8 @@ section article.flex-area {
 article.flex-area div {
     width: 184px;
     margin: var(--item-center);
+    /* viewport1200px->26% */
+    padding-bottom: 38px;
 }
 article.flex-area div p.flex-title {
     font-family: 'メイリオ';
@@ -384,7 +387,10 @@ article.flex-area div p.flex-text {
     font-family: 'メイリオ';
     /* font-size: 0.875em; */
     font-size: 14px;
-    margin: 7% 11% 26% 0;
+    /* viewport1200px->10px */
+    margin-top: 7%;
+    /* viewport1200px->27px */
+    margin-right: 11%;
 }
 
 footer {
